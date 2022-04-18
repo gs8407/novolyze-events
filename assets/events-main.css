@@ -1,10 +1,10 @@
 section.success-hero {
-	background-image: url(list-banner-1.jpg);
-    background-size: cover;
-    min-height: 310px;
-    background-position: center;
-    display: flex;
-    align-items: center;
+  background-image: url(list-banner-1.jpg);
+  background-size: cover;
+  min-height: 310px;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 
 section.success-hero .hero-logo-image {
@@ -28,7 +28,7 @@ section.success-hero h2.section-headline {
   color: #fff;
   padding: 30px 0;
   line-height: 1.3em;
-	margin-bottom: 0
+  margin-bottom: 0;
 }
 
 section.success-hero h4.company-name {
@@ -371,13 +371,13 @@ a.btn-number.page-numbers {
     padding-bottom: 0;
     margin-bottom: 0;
   }
-  
-    .testimonial .testimonial-image {
-  	 justify-content: start;
+
+  .testimonial .testimonial-image {
+    justify-content: start;
   }
-  
+
   .testimonial .testimonial-image img {
-  	padding: 0 15px;
+    padding: 0 15px;
   }
 }
 
@@ -398,5 +398,4 @@ a.btn-number.page-numbers {
   #response-content-events .mosaic-resource-bucket .featured-image img {
     object-fit: cover;
   }
- 
 }

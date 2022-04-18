@@ -30,7 +30,7 @@
           console.log($.trim(response[0]))
           console.table(response)
           filter.find("#response-content-events").empty();
-          
+
           if ($.trim(response[0]) === '') {
             $("#response-content-events").html('<h4>No search results for your search criteria</h4>');
           }
@@ -44,6 +44,9 @@
             <div class="mosaic-resource-bucket">
               <div class="post">
                 <div>
+                  <div class="featured-image">
+                    <img src="${response[i].image}" alt="${response[i].title}">
+                  </div>
                   <div class="content">
                     <div class="small">${response[i].category[0].name}</div>
                     <h3 class="h5"><a href="${response[i].button_url}">${response[i].title}</a></h3>
@@ -60,8 +63,8 @@
             filter.find("#response-content-events").append(html);
             $('#paginate-events').show();
           }
-          
-          
+
+
           $("#paginate-events").empty();
           for (let i = 1; i < maximum + 1; i++) {
             if (maximum > 1) {

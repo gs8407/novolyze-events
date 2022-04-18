@@ -7,7 +7,7 @@
 /*
     Plugin Name: Novolyze Events
     Description: Adds the Events
-    Version: 1.0.0
+    Version: 1.0.1
     Author: Mediavista
     Licence: GPLv2 or later
     Text Domain: events
@@ -223,6 +223,7 @@ function events_filter_callback()
     $filter_query->the_post();
     $result[] = array(
       'title' => get_the_title(),
+      'image' => get_the_post_thumbnail_url(),
       'category' => get_the_terms($post->ID, 'events_type'),
       'button_text' => get_field('button_text'),
       'button_url' => get_field('button_url'),
@@ -315,7 +316,6 @@ if (function_exists('acf_add_local_field_group')) :
       3 => 'discussion',
       4 => 'comments',
       5 => 'slug',
-      6 => 'featured_image',
     ),
     'active' => true,
     'description' => '',
